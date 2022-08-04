@@ -1,0 +1,42 @@
+{
+  "name": "node-todo-app",
+  "version": "1.0.0",
+  "description": "Todo App for interview process",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "lint:fix:file": "eslint --fix "
+  },
+  "keywords": [
+    "Express",
+    "restAPI",
+    "MongoDB",
+    "Mongoose",
+    "Todo"
+  ],
+  "author": "Santiago Bernal",
+  "license": "MIT",
+  "dependencies": {
+    "bl": "^5.0.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.1",
+    "path-parse": "^1.0.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "nodemon": "^2.0.18"
+  }
+}
