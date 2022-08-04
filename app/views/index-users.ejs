@@ -69,9 +69,9 @@
                 td.innerHTML = `${totalUsers}`;
                 td2.innerHTML = `${author.name}`;
                 td3.innerHTML = `
-                <a href="/tasks-ui/user/${author._id}" class="btn btn-info">Tasks</a> 
-                <a href="/users-ui/edit/${author._id}" class="btn btn-warning">Edit</a> 
-                <a href="#" class="btn btn-danger" onclick="deleteUser('${author._id}')">Delete</a>`;
+                <a href="/tasks-ui/user/${author._id}" class="btn btn-info">Tareas</a> 
+                <a href="/users-ui/edit/${author._id}" class="btn btn-warning">Editar</a> 
+                <a href="#" class="btn btn-danger" onclick="deleteUser('${author._id}')">Borrar</a>`;
                 //append TD on TR
                 append(tr, td);
                 append(tr, td2);
