@@ -1,9 +1,9 @@
 <%- include('partials/_header') %>
-    
+
     <div class="container">
 
         <div class="row">
-            <h1>Tasks list</h1>
+            <h1>Lista De Tareas</h1>
         </div>
 
         <div class="row">
@@ -11,7 +11,7 @@
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
-                        <strong>Create Task</strong>
+                        <strong>Crear Tareas</strong>
                         <form>
                             <div class="form-group">
                                 <input class="form-control" type="text" name="description" id="description" placeholder="Description">
@@ -19,7 +19,7 @@
                             <div class="form-group">
                                 <input class="form-control" type="text" name="state" id="state" placeholder="State">
                             </div>
-                            <button class="btn btn-success" onclick="saveTask()">save</button>
+                            <button class="btn btn-success" onclick="saveTask()">Guardar</button>
                         </form>
                     </div>
                 </div>
@@ -31,9 +31,9 @@
                     <thead>
                         <tr>
                             <th>N°</th>
-                            <th>Description</th>
-                            <th>State</th>
-                            <th>Actions</th>
+                            <th>Descripción</th>
+                            <th>Estado</th>
+                            <th>Accion</th>
                         </tr>
                     </thead>
                     <tbody id="user_tasks">
@@ -44,7 +44,7 @@
 
         <div class="row">
             <hr>
-            <a href="/users-ui/" class="btn btn-info">Back to user list</a>
+            <a href="/users-ui/" class="btn btn-info">Volver a la lista de usuarios</a>
         </div>
 
     </div>
