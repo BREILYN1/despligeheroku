@@ -9,7 +9,7 @@ const favicon = require('serve-favicon');
 // environment variables
 // require('dotenv').config();
 const dbUrl = process.env.DB_URL;
-const port = process.env.PORT;
+const port = process.env.PORT || 3333;
 
 // create express app
 const app = express();
@@ -54,6 +54,9 @@ require('./app/routes/user.routes.js')(app);
 require('./app/routes/task.routes.js')(app);
 
 // listen for requests
-app.listen(port, () => {
+/*app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
-});
+});*/
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Express web server started: http://0.0.0.0:${PORT}`);
+  console.log(`Serving content from /${sourceDir}/`); });
