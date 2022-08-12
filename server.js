@@ -9,7 +9,7 @@ const favicon = require('serve-favicon');
 // environment variables
 // require('dotenv').config();
 const dbUrl = process.env.DB_URL;
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 8001;
 
 // create express app
 const app = express();
@@ -44,7 +44,7 @@ mongoose.connect(dbUrl, {
 
 // define a simple route
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to Todo App.' });
+  res.json({ message: 'bienvenidos to Todo App.' });
 });
 
 // Require User routes
@@ -59,4 +59,4 @@ require('./app/routes/task.routes.js')(app);
 });*/
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Express web server started: http://0.0.0.0:${PORT}`);
-  console.log(`Serving content from /${sourceDir}/`); });
+/*console.log(`Serving content from /${sourceDir}/`);*/ });

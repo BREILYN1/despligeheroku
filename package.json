@@ -4,7 +4,7 @@
   "description": "Todo App for interview process",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "server.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "lint:fix:file": "eslint --fix "
